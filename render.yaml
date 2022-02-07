@@ -1,0 +1,12 @@
+services:
+  # A Docker web service
+  - type: web
+    name: marksrendertest
+    env: docker
+    repo: git@github.com:NotQuiteLost/RenderTest.git# optional
+    region: oregon # optional (defaults to oregon)
+    plan: starter# optional (defaults to starter)
+    branch: main # optional (uses repo default)
+    
+    
+    healthCheckPath: /
